@@ -1,0 +1,129 @@
+body {
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1070px;
+}
+
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.nav-bar {
+  background-color: rgba(255, 255, 255, 0.103);
+  padding: 12px 40px;
+  border-radius: 50px;
+  box-shadow: inset 0 0 10px rgba(253, 251, 251, 0.822);
+  display: flex;
+  gap: 60px;
+  position: relative;
+  right: 0;
+  
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-bar a:hover {
+  color: rgba(221, 210, 224, 0.76);
+  text-shadow: 0 0 4px rgba(223, 141, 250, 0.808);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-title {
+  font-size: 3.5rem; 
+  font-weight: 700;
+  line-height: 1.2;
+
+  text-shadow: 2px 2px 20px rgba(151, 20, 163, 0.7);
+}
+
+.hero-sub {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.hero-tag {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: rgba(238, 195, 241, 0.9);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 520px;
+  height: auto;
+  object-fit: cover;
+  animation: float 4s ease-in-out infinite;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: rgba(151, 20, 163, 0.8);
+  color: white;
+  padding: 16px 42px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 0 20px rgba(151, 20, 163, 0.5);
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: rgba(151, 20, 163, 1);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 16px 42px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  border-color: rgba(194, 138, 199, 0.9);
+  color: rgba(194, 138, 199, 0.9);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
